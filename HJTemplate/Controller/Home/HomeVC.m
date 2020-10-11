@@ -9,7 +9,7 @@
 #import "HomeVC.h"
 #import "OtherVC.h"
 #import "HJCommonLib.h"
-#import "TestVC.h"
+#import "CustomVC.h"
 #import "HJTableCell.h"
 
 #import "AppleSignInVC.h"
@@ -29,7 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
-    self.dataSource = @[@"Sign In with Apple",@"主动显示|隐藏TabBar",@"xxxx"];
+    self.dataSource = @[@"Sign In with Apple",@"主动显示|隐藏TabBar",@"test vc"];
+    self.isShow = YES;
     [self customSet];
     [self setUpTableView];
 }
@@ -47,33 +48,9 @@
     self.navigationItem.rightBarButtonItem = right;
 }
 - (void)rightAction {
-//    OtherVC *otherVC = [[OtherVC alloc] init];
-//    otherVC.title = @"other";
-//    [self.navigationController pushViewController:otherVC animated:YES];
-    
-//    NSLog(@"%@", [NSThread callStackSymbols]);
-    NSString *name = nil;
-    NSMutableArray *arr = [NSMutableArray array];
-    [arr addObject:name];
-    NSLog(@"%lu", (unsigned long)arr.count);
-    
-//    UIView *temp1 = [[UIView alloc] initWithFrame:CGRectMake((_kScreenWidth-320)/2, 80, 320, 320)];
-//    temp1.backgroundColor = [UIColor redColor];
-//
-//    UIViewController *tVC1 = [[UIViewController alloc] init];
-//    tVC1.view = temp1;
-//
-//    UIViewController *tVC2 = [[UIViewController alloc] init];
-//    tVC2.view = temp1;
-//
-//    [self.view addSubview:tVC1.view];
-//    [self addChildViewController:tVC1];
-//
-//    [self.view addSubview:tVC2.view];
-//    [self addChildViewController:tVC2];
-//    for(int i = 0; i<1000000; i++) {
-//        NSLog(@"%d", i);
-//    }
+    OtherVC *otherVC = [[OtherVC alloc] init];
+    otherVC.title = @"other";
+    [self.navigationController pushViewController:otherVC animated:YES];
 }
 #pragma mark -
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -84,6 +61,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HJTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HJTableCell class])];
+    cell.leftImageV.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon_%ld", indexPath.row % 10]];
     cell.nameLab.text = self.dataSource[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -102,6 +80,9 @@
              [self.tableView setFrame:CGRectMake(0, 0, _kScreenWidth, _kScreenHeight-kTabBarHeight-SafeAreaBottomHeight)];
         }
         self.isShow = !_isShow;
+    } else if(indexPath.row == 2) {
+        CustomVC *vc = [[CustomVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

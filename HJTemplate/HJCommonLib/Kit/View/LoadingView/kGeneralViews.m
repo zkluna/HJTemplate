@@ -7,70 +7,10 @@
 //
 
 #import "kGeneralViews.h"
-
 #import "UIView+HJExtension.h"
 #import "UIColor+Extend.h"
 
 @implementation kGeneralViews
-
-@end
-
-#pragma mark ---自定义刷新控件---
-
-@interface LoadingView()
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
-@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
-@property (weak, nonatomic) IBOutlet UIView *bgView;
-
-@end
-
-@implementation LoadingView
-
-static LoadingView *_g_LoadingView = nil;
-
-+ (void)height {
-    if(_g_LoadingView){
-        _g_LoadingView.hj_height = _kScreenWidth-64-49;
-    }
-}
-+ (void)showLoadingWithString:(NSString *)string withView:(UIView *)view{
-    if(!_g_LoadingView){
-        _g_LoadingView = [[LoadingView alloc] initWithFrame:CGRectMake(0, 64, _kScreenWidth, _kScreenHeight-64)];
-        _g_LoadingView.backgroundColor = [UIColor darkGrayColor];
-        _g_LoadingView.alpha = 0.5;
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loadingicon"]];
-        imageView.hj_size = CGSizeMake(45, 45);
-        imageView.center = _g_LoadingView.center;
-        imageView.hj_centerY -= 64;
-        [_g_LoadingView addSubview:imageView];
-        _g_LoadingView.bgView = imageView;
-        /*
-        UIImageView *centerView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"loadingicon"]];
-        centerView.size = CGSizeMake(48*0.8, 8*0.8);
-        centerView.center = imageView.center;
-        [_g_LoadingView addSubview:centerView];
-         */
-        [imageView rotateViewIndefinitelyInDurationPerLoop:1 isClockWise:NO];
-    }
-    if(string.length > 0){
-        _g_LoadingView.loadingStr = string;
-    }
-    if(_g_LoadingView.loadingStr.length <= 0){
-        _g_LoadingView.loadingStr = @"loading...";
-    }
-    [LoadingView hideLoadingView];
-    [view addSubview:_g_LoadingView];
-}
-+ (void)hideLoadingView {
-    if(_g_LoadingView.superview){
-        [_g_LoadingView removeFromSuperview];
-    }
-    [_g_LoadingView removeFromSuperview];
-}
-- (void)setLoadingStr:(NSString *)loadingStr {
-    _loadingStr = loadingStr;
-    self.loadingLabel.text = loadingStr;
-}
 
 @end
 
@@ -135,7 +75,7 @@ static ErrorView *_g_ErrorView = nil;
     }
     [ErrorView showError:msg withShowDuration:1.f finishAction:action];
 }
-+ (void)showError:(NSString *)string finishAction:(void(^)())action {
++ (void)showError:(NSString *)string finishAction:(void(^)(void))action {
     CGFloat margin = 15;
     CGFloat marginBg = 70;
     if(!_g_ErrorView) {

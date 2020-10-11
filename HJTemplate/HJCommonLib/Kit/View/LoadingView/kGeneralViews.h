@@ -14,24 +14,11 @@
 #import "UILabel+Extend.h"
 #import "NSString+Extend.h"
 
-
-
 @interface kGeneralViews : UIView
 
 @end
 
 typedef void(^actionBlock)(void);
-
-#pragma mark ---自定义刷新控件---
-@interface LoadingView: UIView
-
-@property (nonatomic, copy) NSString *loadingStr;
-
-+ (void)height;
-+ (void)showLoadingWithString:(NSString *)string withView:(UIView *)view;
-+ (void)hideLoadingView;
-
-@end
 
 @interface ErrorView : UIView
 

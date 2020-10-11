@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'
 target 'HJTemplate' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
@@ -11,7 +11,6 @@ target 'HJTemplate' do
   pod 'YYModel'
   pod 'MBProgressHUD'
   pod 'MJRefresh'
-#  pod 'Realm'
   pod 'CTMediator'
 # pod 'KSCrash'
 

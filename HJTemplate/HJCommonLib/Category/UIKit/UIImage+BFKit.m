@@ -599,7 +599,7 @@
 }
 
 + (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color {
-    CGRect rect = CGRectMake(0, 0, 1, 1);
+    CGRect rect = CGRectMake(0, 0, 100, 100);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, [[UIScreen mainScreen] scale]);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);

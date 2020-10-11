@@ -31,15 +31,13 @@
         self.contentView.backgroundColor = [UIColor whiteColor];
     }
     _leftImageV = [[UIImageView alloc] initWithFrame:CGRectMake(16, 15, 60, 60)];
-    _leftImageV.layer.cornerRadius = 15;
+    _leftImageV.layer.cornerRadius = 5;
     _leftImageV.layer.masksToBounds = YES;
-    _leftImageV.backgroundColor = [UIColor orangeColor];
     [self.contentView addSubview:self.leftImageV];
     
     _nameLab = [[UILabel alloc] initWithFrame:CGRectMake(90, 30, 200, 30)];
-    _nameLab.textColor = [UIColor blueColor];
-//    _nameLab.backgroundColor = [UIColor lightGrayColor];
-    _nameLab.font = [UIFont systemFontOfSize:17 weight:UIFontWeightMedium];
+    _nameLab.textColor = [UIColor darkTextColor];
+    _nameLab.font = [UIFont systemFontOfSize:16];
     [self.contentView addSubview:self.nameLab];
 
 }

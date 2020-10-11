@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "MBProgressHUD+EasyToUse.h"
+#import "MBProgressHUD+JJ.h"
 
 @interface BaseViewController ()
 
@@ -61,7 +61,7 @@
 }
 - (void)showErrorPromptActionWithError:(NSError *)error {
     // code for error
-    [MBProgressHUD showError:error.localizedDescription onView:nil];
+    [MBProgressHUD showError:error.localizedDescription];
 }
 - (BOOL)shouldBePoppedFromNavigation:(UINavigationController *)navigation {
     return YES;

@@ -8,9 +8,9 @@
 
 #import "HJWebView.h"
 #import "HJCommonLib.h"
-#import "MBProgressHUD+EasyToUse.h"
+#import "MBProgressHUD+JJ.h"
 
-#define YoutilSchemeString @"'xxx.xxx.com.cn"
+#define MySchemeString @"'xxx.xxx.com.cn"
 
 @interface HJWebView()<WKUIDelegate, WKScriptMessageHandler, WKNavigationDelegate, UIGestureRecognizerDelegate>
 
@@ -175,7 +175,7 @@
             paramString = [paramString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
             tempUrl = [NSString stringWithFormat:@"%@?%@", prefixString,  paramString];
         } else {
-            [MBProgressHUD showError:@"链接参数有误" onView:nil];
+            [MBProgressHUD showMessage:@"链接参数有误"];
         }
     }
     NSURL *url = [NSURL URLWithString:tempUrl];
@@ -184,10 +184,24 @@
     [self.webView loadRequest:request];
 }
 - (void)loadWebViewWithFilePath:(NSString *)filePath {
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
-    [self.webView loadRequest:request];
+    NSString *allowPath = filePath;
+    NSURL *url = nil;
+    NSURLComponents *urlComponents = nil;
+    if([filePath containsString:@"?"]) {
+        NSArray *temp = [filePath componentsSeparatedByString:@"?"];
+        if(temp.count == 2) {
+            NSString *prefixString = [temp firstObject];
+            NSString *paramString = [temp lastObject];
+            url = [NSURL fileURLWithPath:prefixString];
+            urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:[NSURL fileURLWithPath:allowPath]];
+            [urlComponents setQuery:paramString];
+        }
+    } else {
+        url = [NSURL fileURLWithPath:filePath];
+        urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:[NSURL fileURLWithPath:allowPath]];
+    }
+    NSLog(@"%@", urlComponents.URL);
+    [self.webView loadFileURL:urlComponents.URL allowingReadAccessToURL:[NSURL fileURLWithPath:allowPath]];
 }
 - (void)loadWebViewWithHTMLString:(NSString *)HTMLString {
     [self.webView loadHTMLString:HTMLString baseURL:nil];
@@ -203,7 +217,7 @@
 - (void)webViewDidClose:(WKWebView *)webView {
 }
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    [MBProgressHUD showError:message onView:nil];
+    [MBProgressHUD showMessage:message];
     completionHandler();
 }
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
@@ -255,7 +269,7 @@
         return;
     }
     // 微信支付处理
-    if([absoluteString hasPrefix:@"https://wx.tenpay.com/cgi-bin/mmpayweb-bin/checkmweb"] && ![absoluteString hasSuffix:[NSString stringWithFormat:@"redirect_url=%@://",YoutilSchemeString]]) {
+    if([absoluteString hasPrefix:@"https://wx.tenpay.com/cgi-bin/mmpayweb-bin/checkmweb"] && ![absoluteString hasSuffix:[NSString stringWithFormat:@"redirect_url=%@://",MySchemeString]]) {
         NSLog(@"------%@", absoluteString);
         NSString *redirectUrl = nil;
         if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://"]]) {
@@ -267,13 +281,13 @@
         if([absoluteString containsString:@"redirect_url="]) {
             NSRange redirectRange = [absoluteString rangeOfString:@"redirect_url"];
             endPageRedirectUrl = [absoluteString substringFromIndex:redirectRange.location+redirectRange.length+1];
-            redirectUrl = [[absoluteString substringToIndex:redirectRange.location] stringByAppendingString:[NSString stringWithFormat:@"redirect_url=%@://", YoutilSchemeString]];
+            redirectUrl = [[absoluteString substringToIndex:redirectRange.location] stringByAppendingString:[NSString stringWithFormat:@"redirect_url=%@://", MySchemeString]];
         } else {
-            redirectUrl = [NSString stringWithFormat:@"%@&redirect_url=%@://", absoluteString, YoutilSchemeString];
+            redirectUrl = [NSString stringWithFormat:@"%@&redirect_url=%@://", absoluteString, MySchemeString];
         }
         NSMutableURLRequest *payRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:redirectUrl] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.5];
         payRequest.allHTTPHeaderFields = navigationAction.request.allHTTPHeaderFields;
-        [payRequest setValue:YoutilSchemeString forHTTPHeaderField:@"Referer"];
+        [payRequest setValue:MySchemeString forHTTPHeaderField:@"Referer"];
         payRequest.URL = [NSURL URLWithString:redirectUrl];
         [webView loadRequest:payRequest];
         return;
@@ -296,7 +310,7 @@
         NSArray * urlBaseArr = [absoluteString componentsSeparatedByString:@"?"];
         NSString * urlBaseStr = urlBaseArr.firstObject;
         NSString * urlLaseString = urlBaseArr.lastObject;
-        NSString * afterHandleStr = [urlLaseString stringByReplacingOccurrencesOfString:@"alipays" withString:YoutilSchemeString];
+        NSString * afterHandleStr = [urlLaseString stringByReplacingOccurrencesOfString:@"alipays" withString:MySchemeString];
         NSString * finalStr = [NSString stringWithFormat:@"%@?%@",urlBaseStr,afterHandleStr];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

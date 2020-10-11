@@ -9,10 +9,10 @@
 #import "LTLaunchADTool.h"
 #import "CacheDataManager.h"
 #import "SDWebImageDownloader.h"
-#import "MBProgressHUD+EasyToUse.h"
 #import "HJCustomTabBarC.h"
 #import "HJNetworkingTool.h"
 #import "LTLaunchAdVC.h"
+#import "MBProgressHUD+JJ.h"
 
 @implementation LTLaunchADTool
 
@@ -42,7 +42,7 @@
             UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
             UIApplication.sharedApplication.delegate.window.rootViewController = navVC;
         } else {
-            [MBProgressHUD showError:@"登录页面类名错误" onView:nil];
+            [MBProgressHUD showMessage:@"登录页面类名错误"];
         }
     }
 }

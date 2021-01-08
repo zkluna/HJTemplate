@@ -13,6 +13,7 @@ target 'HJTemplate' do
   pod 'MJRefresh'
   pod 'CTMediator'
 # pod 'KSCrash'
+  pod 'fishhook'
 
   target 'HJTemplateTests' do
     inherit! :search_paths

@@ -10,9 +10,8 @@
 
 @interface UIViewController (Extend)
 
-/**  push/pop */
 - (void)popToRoot;
-/**  custom navigation */
+
 - (void)setNaviTitle:(NSString *)title withColor:(UIColor  *)color;
 
 - (void)popLastVCInStack;
@@ -32,5 +31,6 @@
 
 + (UIViewController *)getCurrentController;
 
+- (void)showAlertWithMessage:(NSString *)message action:(void(^)(void))setAction;
 
 @end

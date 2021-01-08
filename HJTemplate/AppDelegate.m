@@ -9,13 +9,12 @@
 #import "AppDelegate.h"
 #import "HJCustomTabBarC.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
-#import "UncaughtExceptionHandler.h"
+//#import "UncaughtExceptionHandler.h"
 //#import "MatrixHandler.h"
 //#import <KSCrash/KSCrash.h>
 //#import <KSCrash/KSCrashInstallation+Alert.h>
 //#import <KSCrash/KSCrashInstallationStandard.h>
 //#import <KSCrash/KSCrashInstallationConsole.h>
-
 
 @interface AppDelegate ()
 
@@ -23,7 +22,7 @@
 
 @implementation AppDelegate
 
-static BOOL g_crashInHandler = NO;
+//static BOOL g_crashInHandler = NO;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //

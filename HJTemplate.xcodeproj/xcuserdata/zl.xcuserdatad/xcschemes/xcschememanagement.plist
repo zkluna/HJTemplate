@@ -12,7 +12,25 @@
 		<key>HJTemplate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DE604489219E5A6200C952BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE6044A1219E5A6300C952BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE6044AC219E5A6300C952BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

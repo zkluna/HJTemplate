@@ -11,6 +11,7 @@
 #import "HJCommonLib.h"
 #import "CustomVC.h"
 #import "HJTableCell.h"
+#import "BleDeviceListVC.h"
 
 #import "AppleSignInVC.h"
 #import <pthread.h>
@@ -29,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
-    self.dataSource = @[@"Sign In with Apple",@"主动显示|隐藏TabBar",@"test vc"];
+    self.dataSource = @[@"Sign In with Apple",@"主动显示|隐藏TabBar",@"test vc", @"蓝牙"];
     self.isShow = YES;
     [self customSet];
     [self setUpTableView];
@@ -82,6 +83,9 @@
         self.isShow = !_isShow;
     } else if(indexPath.row == 2) {
         CustomVC *vc = [[CustomVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(indexPath.row == 3) {
+        BleDeviceListVC *vc = [[BleDeviceListVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpConfig];
+    self.navigationBar.translucent = NO;
+//    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor redColor]] forBarMetrics:UIBarMetricsDefault];
 }
 - (void)setUpConfig {
       id target = self.interactivePopGestureRecognizer.delegate;

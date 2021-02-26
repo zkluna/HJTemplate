@@ -17,7 +17,7 @@
 }
 - (void)setNaviTitle:(NSString *)title withColor:(UIColor  *)color {
     UILabel *label = [UILabel naviLabelWithTitle:title color:color];
-    CGFloat fontSize;
+    CGFloat fontSize = 18.0f;
     if(isIphone4 || isIphone5) {
         fontSize = 17.0f;
     } else if(isIphone6) {
@@ -92,6 +92,16 @@
         currentVC = rootVC;
     }
     return currentVC;
+}
+- (void)showAlertWithMessage:(NSString *)message action:(void(^)(void))setAction {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *set = [UIAlertAction actionWithTitle:@"设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if(setAction)setAction();
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:set];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end

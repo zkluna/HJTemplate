@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - CTMediator (32)
+  - fishhook (0.2)
   - IQKeyboardManager (6.5.5)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.4.3)
@@ -26,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CTMediator
+  - fishhook
   - IQKeyboardManager
   - MBProgressHUD
   - MJRefresh
@@ -36,6 +38,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - CTMediator
+    - fishhook
     - IQKeyboardManager
     - MBProgressHUD
     - MJRefresh
@@ -45,12 +48,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CTMediator: 10f2c387be0ab2061b75b88c86f9903eedba1ce8
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b8ca72db09d2c3914886b6b065e5b766d8833330
+PODFILE CHECKSUM: 7a2947160bac0b90c53cbe7bd4f8c31261661bbe
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

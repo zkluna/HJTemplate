@@ -16,17 +16,15 @@
 		5890EE0921FAA3890081C5F8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5890EE0821FAA3890081C5F8 /* BaseViewController.m */; };
 		58A7786D2222E2A0005DC7D3 /* HJBaseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A7786C2222E2A0005DC7D3 /* HJBaseUser.m */; };
 		6F67BF37C24C9A7BF304BD6C /* libPods-HJTemplateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CD30819FEC808DE4919686 /* libPods-HJTemplateUITests.a */; };
-		7821B051251A07570045C48B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B050251A07570045C48B /* AppDelegate.m */; };
-		7821B054251A07570045C48B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B053251A07570045C48B /* SceneDelegate.m */; };
-		7821B057251A07570045C48B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B056251A07570045C48B /* ViewController.m */; };
-		7821B05A251A07570045C48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7821B058251A07570045C48B /* Main.storyboard */; };
-		7821B05C251A075A0045C48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7821B05B251A075A0045C48B /* Assets.xcassets */; };
-		7821B05F251A075A0045C48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7821B05D251A075A0045C48B /* LaunchScreen.storyboard */; };
-		7821B062251A075A0045C48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B061251A075A0045C48B /* main.m */; };
-		7821B06D251A075A0045C48B /* HJQuickReviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B06C251A075A0045C48B /* HJQuickReviewTests.m */; };
-		7821B078251A075A0045C48B /* HJQuickReviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7821B077251A075A0045C48B /* HJQuickReviewUITests.m */; };
-		7821B07C251A075A0045C48B /* HJQuickReview.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 7821B04D251A07570045C48B /* HJQuickReview.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		785DCC7C259473F600A51E2A /* NSFileManager+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DCC7B259473F600A51E2A /* NSFileManager+Extend.m */; };
+		785DCC852594799F00A51E2A /* NSTimer+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DCC842594799F00A51E2A /* NSTimer+Extend.m */; };
+		785DCC8E259480D800A51E2A /* THAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DCC8D259480D800A51E2A /* THAssetsLibrary.m */; };
+		785DCC97259484BB00A51E2A /* THCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DCC96259484BB00A51E2A /* THCaptureButton.m */; };
 		787242E62463B3CB00AAE5E5 /* UITabBar+hj_badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 787242E52463B3CB00AAE5E5 /* UITabBar+hj_badge.m */; };
+		78852CAB258A0285008E9EB3 /* BleDeviceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78852CAA258A0285008E9EB3 /* BleDeviceListVC.m */; };
+		78852CB5258A05F3008E9EB3 /* BlueToothInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78852CB3258A05F3008E9EB3 /* BlueToothInfoCell.m */; };
+		78852CB6258A05F3008E9EB3 /* BlueToothInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78852CB4258A05F3008E9EB3 /* BlueToothInfoCell.xib */; };
+		78852CCB258AE944008E9EB3 /* CenterBLEVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78852CCA258AE944008E9EB3 /* CenterBLEVC.m */; };
 		78B4D6AA225CBDB000ECB59E /* NSObject+msgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D6A8225CBDB000ECB59E /* NSObject+msgForwarding.m */; };
 		78BA98A723667FD300F68726 /* HJTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BA98A623667FD300F68726 /* HJTableCell.m */; };
 		78BA98AF2366958A00F68726 /* YostarKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BA98AE2366958A00F68726 /* YostarKeychain.m */; };
@@ -37,6 +35,12 @@
 		78BBDAA2230E8F9900D4BC3B /* HJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BBDAA1230E8F9800D4BC3B /* HJWebViewController.m */; };
 		78BBDAA7230E940B00D4BC3B /* HJGeneralRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BBDAA3230E940A00D4BC3B /* HJGeneralRequest.m */; };
 		78BBDAA8230E940B00D4BC3B /* HJNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BBDAA5230E940B00D4BC3B /* HJNetworkManager.m */; };
+		B581C12425E88AEA00B4EDF3 /* UIViewController+HJNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B581C12325E88AEA00B4EDF3 /* UIViewController+HJNavigation.m */; };
+		B581C12D25E88B1800B4EDF3 /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B581C12C25E88B1800B4EDF3 /* JTNavigationController.m */; };
+		B581C13B25E88D3300B4EDF3 /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B581C13925E88D3300B4EDF3 /* backImage@3x.png */; };
+		B581C13C25E88D3300B4EDF3 /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B581C13A25E88D3300B4EDF3 /* backImage@2x.png */; };
+		B581C14225E89B6000B4EDF3 /* JTWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B581C14125E89B6000B4EDF3 /* JTWrapNavigationController.m */; };
+		B581C14B25E8FA1900B4EDF3 /* JTWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B581C14A25E8FA1900B4EDF3 /* JTWrapViewController.m */; };
 		D068194D6E8EDEE814F9422A /* libPods-HJTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B57B1ACA4950F5A5BD8AA83D /* libPods-HJTemplateTests.a */; };
 		D9D5BD0DC711D3EA9D431130 /* libPods-HJTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365CCC8EDCA9D3B6373AF73 /* libPods-HJTemplate.a */; };
 		DE60448F219E5A6200C952BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE60448E219E5A6200C952BA /* AppDelegate.m */; };
@@ -128,27 +132,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7821B069251A075A0045C48B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE604482219E5A6200C952BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7821B04C251A07570045C48B;
-			remoteInfo = HJQuickReview;
-		};
-		7821B074251A075A0045C48B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE604482219E5A6200C952BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7821B04C251A07570045C48B;
-			remoteInfo = HJQuickReview;
-		};
-		7821B07A251A075A0045C48B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE604482219E5A6200C952BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7821B04C251A07570045C48B;
-			remoteInfo = HJQuickReview;
-		};
 		DE6044A3219E5A6300C952BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE604482219E5A6200C952BA /* Project object */;
@@ -172,7 +155,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				7821B07C251A075A0045C48B /* HJQuickReview.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,27 +181,23 @@
 		58A7786B2222E2A0005DC7D3 /* HJBaseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBaseUser.h; sourceTree = "<group>"; };
 		58A7786C2222E2A0005DC7D3 /* HJBaseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBaseUser.m; sourceTree = "<group>"; };
 		5956CF32ACFFF9AB58E7DCDC /* Pods-HJTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJTemplateTests/Pods-HJTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		7821B04D251A07570045C48B /* HJQuickReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJQuickReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7821B04F251A07570045C48B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7821B050251A07570045C48B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7821B052251A07570045C48B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7821B053251A07570045C48B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		7821B055251A07570045C48B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7821B056251A07570045C48B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7821B059251A07570045C48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7821B05B251A075A0045C48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7821B05E251A075A0045C48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7821B060251A075A0045C48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7821B061251A075A0045C48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7821B063251A075A0045C48B /* HJQuickReview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HJQuickReview.entitlements; sourceTree = "<group>"; };
-		7821B068251A075A0045C48B /* HJQuickReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJQuickReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7821B06C251A075A0045C48B /* HJQuickReviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJQuickReviewTests.m; sourceTree = "<group>"; };
-		7821B06E251A075A0045C48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7821B073251A075A0045C48B /* HJQuickReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJQuickReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7821B077251A075A0045C48B /* HJQuickReviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJQuickReviewUITests.m; sourceTree = "<group>"; };
-		7821B079251A075A0045C48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785DCC7A259473F600A51E2A /* NSFileManager+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extend.h"; sourceTree = "<group>"; };
+		785DCC7B259473F600A51E2A /* NSFileManager+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extend.m"; sourceTree = "<group>"; };
+		785DCC832594799F00A51E2A /* NSTimer+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extend.h"; sourceTree = "<group>"; };
+		785DCC842594799F00A51E2A /* NSTimer+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extend.m"; sourceTree = "<group>"; };
+		785DCC8C259480D800A51E2A /* THAssetsLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAssetsLibrary.h; sourceTree = "<group>"; };
+		785DCC8D259480D800A51E2A /* THAssetsLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAssetsLibrary.m; sourceTree = "<group>"; };
+		785DCC95259484BB00A51E2A /* THCaptureButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCaptureButton.h; sourceTree = "<group>"; };
+		785DCC96259484BB00A51E2A /* THCaptureButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THCaptureButton.m; sourceTree = "<group>"; };
 		787242E42463B3CA00AAE5E5 /* UITabBar+hj_badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+hj_badge.h"; sourceTree = "<group>"; };
 		787242E52463B3CB00AAE5E5 /* UITabBar+hj_badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+hj_badge.m"; sourceTree = "<group>"; };
+		78852CA9258A0285008E9EB3 /* BleDeviceListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BleDeviceListVC.h; sourceTree = "<group>"; };
+		78852CAA258A0285008E9EB3 /* BleDeviceListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BleDeviceListVC.m; sourceTree = "<group>"; };
+		78852CB2258A05F3008E9EB3 /* BlueToothInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothInfoCell.h; sourceTree = "<group>"; };
+		78852CB3258A05F3008E9EB3 /* BlueToothInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothInfoCell.m; sourceTree = "<group>"; };
+		78852CB4258A05F3008E9EB3 /* BlueToothInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothInfoCell.xib; sourceTree = "<group>"; };
+		78852CC9258AE944008E9EB3 /* CenterBLEVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterBLEVC.h; sourceTree = "<group>"; };
+		78852CCA258AE944008E9EB3 /* CenterBLEVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterBLEVC.m; sourceTree = "<group>"; };
 		789525FC7E06ACB0785396B1 /* Pods-HJTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJTemplate/Pods-HJTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		78B4D6A8225CBDB000ECB59E /* NSObject+msgForwarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+msgForwarding.m"; sourceTree = "<group>"; };
 		78B4D6A9225CBDB000ECB59E /* NSObject+msgForwarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+msgForwarding.h"; sourceTree = "<group>"; };
@@ -243,6 +221,16 @@
 		78BBDAA6230E940B00D4BC3B /* HJNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetworkManager.h; sourceTree = "<group>"; };
 		7B41B34803E48236ABBDF079 /* Pods-HJTemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJTemplateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJTemplateUITests/Pods-HJTemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B57B1ACA4950F5A5BD8AA83D /* libPods-HJTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B581C12225E88AEA00B4EDF3 /* UIViewController+HJNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HJNavigation.h"; sourceTree = "<group>"; };
+		B581C12325E88AEA00B4EDF3 /* UIViewController+HJNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HJNavigation.m"; sourceTree = "<group>"; };
+		B581C12B25E88B1800B4EDF3 /* JTNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTNavigationController.h; sourceTree = "<group>"; };
+		B581C12C25E88B1800B4EDF3 /* JTNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTNavigationController.m; sourceTree = "<group>"; };
+		B581C13925E88D3300B4EDF3 /* backImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@3x.png"; sourceTree = "<group>"; };
+		B581C13A25E88D3300B4EDF3 /* backImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@2x.png"; sourceTree = "<group>"; };
+		B581C14025E89B6000B4EDF3 /* JTWrapNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTWrapNavigationController.h; sourceTree = "<group>"; };
+		B581C14125E89B6000B4EDF3 /* JTWrapNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTWrapNavigationController.m; sourceTree = "<group>"; };
+		B581C14925E8FA1900B4EDF3 /* JTWrapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTWrapViewController.h; sourceTree = "<group>"; };
+		B581C14A25E8FA1900B4EDF3 /* JTWrapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTWrapViewController.m; sourceTree = "<group>"; };
 		BD0054FFE0726E8CE2EB9F13 /* Pods-HJTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJTemplate/Pods-HJTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		D3DDA72D1767449B7141CA1D /* Pods-HJTemplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJTemplateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJTemplateUITests/Pods-HJTemplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE60448A219E5A6200C952BA /* HJTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -424,27 +412,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7821B04A251A07570045C48B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B065251A075A0045C48B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B070251A075A0045C48B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DE604487219E5A6200C952BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,43 +468,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7821B04E251A07570045C48B /* HJQuickReview */ = {
-			isa = PBXGroup;
-			children = (
-				7821B04F251A07570045C48B /* AppDelegate.h */,
-				7821B050251A07570045C48B /* AppDelegate.m */,
-				7821B052251A07570045C48B /* SceneDelegate.h */,
-				7821B053251A07570045C48B /* SceneDelegate.m */,
-				7821B055251A07570045C48B /* ViewController.h */,
-				7821B056251A07570045C48B /* ViewController.m */,
-				7821B058251A07570045C48B /* Main.storyboard */,
-				7821B05B251A075A0045C48B /* Assets.xcassets */,
-				7821B05D251A075A0045C48B /* LaunchScreen.storyboard */,
-				7821B060251A075A0045C48B /* Info.plist */,
-				7821B061251A075A0045C48B /* main.m */,
-				7821B063251A075A0045C48B /* HJQuickReview.entitlements */,
-			);
-			path = HJQuickReview;
-			sourceTree = "<group>";
-		};
-		7821B06B251A075A0045C48B /* HJQuickReviewTests */ = {
-			isa = PBXGroup;
-			children = (
-				7821B06C251A075A0045C48B /* HJQuickReviewTests.m */,
-				7821B06E251A075A0045C48B /* Info.plist */,
-			);
-			path = HJQuickReviewTests;
-			sourceTree = "<group>";
-		};
-		7821B076251A075A0045C48B /* HJQuickReviewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7821B077251A075A0045C48B /* HJQuickReviewUITests.m */,
-				7821B079251A075A0045C48B /* Info.plist */,
-			);
-			path = HJQuickReviewUITests;
-			sourceTree = "<group>";
-		};
 		7853FCC82531B0B400CA2BBC /* Decouple */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,6 +522,55 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		785DCC77259472C300A51E2A /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				785DCC8B259480B900A51E2A /* Model */,
+				785DCC8A259480B000A51E2A /* Controller */,
+				785DCC89259480A500A51E2A /* View */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		785DCC89259480A500A51E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785DCC95259484BB00A51E2A /* THCaptureButton.h */,
+				785DCC96259484BB00A51E2A /* THCaptureButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785DCC8A259480B000A51E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785DCC8B259480B900A51E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				785DCC8C259480D800A51E2A /* THAssetsLibrary.h */,
+				785DCC8D259480D800A51E2A /* THAssetsLibrary.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78852C99258A017E008E9EB3 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				78852CB2258A05F3008E9EB3 /* BlueToothInfoCell.h */,
+				78852CB3258A05F3008E9EB3 /* BlueToothInfoCell.m */,
+				78852CB4258A05F3008E9EB3 /* BlueToothInfoCell.xib */,
+				78852CA9258A0285008E9EB3 /* BleDeviceListVC.h */,
+				78852CAA258A0285008E9EB3 /* BleDeviceListVC.m */,
+				78852CC9258AE944008E9EB3 /* CenterBLEVC.h */,
+				78852CCA258AE944008E9EB3 /* CenterBLEVC.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 		78BA98A92366939900F68726 /* AppleLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,15 +612,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B581C12125E8893000B4EDF3 /* JTNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				B581C13A25E88D3300B4EDF3 /* backImage@2x.png */,
+				B581C13925E88D3300B4EDF3 /* backImage@3x.png */,
+				B581C12225E88AEA00B4EDF3 /* UIViewController+HJNavigation.h */,
+				B581C12325E88AEA00B4EDF3 /* UIViewController+HJNavigation.m */,
+				B581C12B25E88B1800B4EDF3 /* JTNavigationController.h */,
+				B581C12C25E88B1800B4EDF3 /* JTNavigationController.m */,
+				B581C14925E8FA1900B4EDF3 /* JTWrapViewController.h */,
+				B581C14A25E8FA1900B4EDF3 /* JTWrapViewController.m */,
+				B581C14025E89B6000B4EDF3 /* JTWrapNavigationController.h */,
+				B581C14125E89B6000B4EDF3 /* JTWrapNavigationController.m */,
+			);
+			path = JTNavigation;
+			sourceTree = "<group>";
+		};
 		DE604481219E5A6200C952BA = {
 			isa = PBXGroup;
 			children = (
 				DE60448C219E5A6200C952BA /* HJTemplate */,
 				DE6044A5219E5A6300C952BA /* HJTemplateTests */,
 				DE6044B0219E5A6300C952BA /* HJTemplateUITests */,
-				7821B04E251A07570045C48B /* HJQuickReview */,
-				7821B06B251A075A0045C48B /* HJQuickReviewTests */,
-				7821B076251A075A0045C48B /* HJQuickReviewUITests */,
 				DE60448B219E5A6200C952BA /* Products */,
 				A8987B4C2D574CE651EF077E /* Pods */,
 				76A4A15DC4874527346A6405 /* Frameworks */,
@@ -654,9 +647,6 @@
 				DE60448A219E5A6200C952BA /* HJTemplate.app */,
 				DE6044A2219E5A6300C952BA /* HJTemplateTests.xctest */,
 				DE6044AD219E5A6300C952BA /* HJTemplateUITests.xctest */,
-				7821B04D251A07570045C48B /* HJQuickReview.app */,
-				7821B068251A075A0045C48B /* HJQuickReviewTests.xctest */,
-				7821B073251A075A0045C48B /* HJQuickReviewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -847,6 +837,10 @@
 				DE604581219E5F4500C952BA /* NSString+HJExtension.m */,
 				DE60458E219E5F4600C952BA /* NSString+Size.h */,
 				DE60457D219E5F4500C952BA /* NSString+Size.m */,
+				785DCC7A259473F600A51E2A /* NSFileManager+Extend.h */,
+				785DCC7B259473F600A51E2A /* NSFileManager+Extend.m */,
+				785DCC832594799F00A51E2A /* NSTimer+Extend.h */,
+				785DCC842594799F00A51E2A /* NSTimer+Extend.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -900,6 +894,7 @@
 		DE6044F3219E5B6300C952BA /* BaseObj */ = {
 			isa = PBXGroup;
 			children = (
+				B581C12125E8893000B4EDF3 /* JTNavigation */,
 				DEC6F9DD21B4CAEB00FEB9AA /* HJConfig.h */,
 				DE6044F4219E5B6300C952BA /* BasicModel.h */,
 				DE6044F5219E5B6300C952BA /* BasicModel.m */,
@@ -961,6 +956,8 @@
 		DE6045E6219E6D4300C952BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				785DCC77259472C300A51E2A /* Capture */,
+				78852C99258A017E008E9EB3 /* Bluetooth */,
 				DE6045EF219E6D4300C952BA /* HomeVC.h */,
 				DE6045EB219E6D4300C952BA /* HomeVC.m */,
 				DE6045E7219E6D4300C952BA /* OtherVC.h */,
@@ -1082,59 +1079,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7821B04C251A07570045C48B /* HJQuickReview */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7821B084251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReview" */;
-			buildPhases = (
-				7821B049251A07570045C48B /* Sources */,
-				7821B04A251A07570045C48B /* Frameworks */,
-				7821B04B251A07570045C48B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HJQuickReview;
-			productName = HJQuickReview;
-			productReference = 7821B04D251A07570045C48B /* HJQuickReview.app */;
-			productType = "com.apple.product-type.application.on-demand-install-capable";
-		};
-		7821B067251A075A0045C48B /* HJQuickReviewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7821B085251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReviewTests" */;
-			buildPhases = (
-				7821B064251A075A0045C48B /* Sources */,
-				7821B065251A075A0045C48B /* Frameworks */,
-				7821B066251A075A0045C48B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7821B06A251A075A0045C48B /* PBXTargetDependency */,
-			);
-			name = HJQuickReviewTests;
-			productName = HJQuickReviewTests;
-			productReference = 7821B068251A075A0045C48B /* HJQuickReviewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7821B072251A075A0045C48B /* HJQuickReviewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7821B086251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReviewUITests" */;
-			buildPhases = (
-				7821B06F251A075A0045C48B /* Sources */,
-				7821B070251A075A0045C48B /* Frameworks */,
-				7821B071251A075A0045C48B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7821B075251A075A0045C48B /* PBXTargetDependency */,
-			);
-			name = HJQuickReviewUITests;
-			productName = HJQuickReviewUITests;
-			productReference = 7821B073251A075A0045C48B /* HJQuickReviewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		DE604489219E5A6200C952BA /* HJTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE6044B6219E5A6300C952BA /* Build configuration list for PBXNativeTarget "HJTemplate" */;
@@ -1149,7 +1093,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7821B07B251A075A0045C48B /* PBXTargetDependency */,
 			);
 			name = HJTemplate;
 			productName = HJTemplate;
@@ -1203,17 +1146,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = hhh;
 				TargetAttributes = {
-					7821B04C251A07570045C48B = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					7821B067251A075A0045C48B = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 7821B04C251A07570045C48B;
-					};
-					7821B072251A075A0045C48B = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 7821B04C251A07570045C48B;
-					};
 					DE604489219E5A6200C952BA = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -1243,43 +1175,19 @@
 				DE604489219E5A6200C952BA /* HJTemplate */,
 				DE6044A1219E5A6300C952BA /* HJTemplateTests */,
 				DE6044AC219E5A6300C952BA /* HJTemplateUITests */,
-				7821B04C251A07570045C48B /* HJQuickReview */,
-				7821B067251A075A0045C48B /* HJQuickReviewTests */,
-				7821B072251A075A0045C48B /* HJQuickReviewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7821B04B251A07570045C48B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7821B05F251A075A0045C48B /* LaunchScreen.storyboard in Resources */,
-				7821B05C251A075A0045C48B /* Assets.xcassets in Resources */,
-				7821B05A251A07570045C48B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B066251A075A0045C48B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B071251A075A0045C48B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DE604488219E5A6200C952BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78852CB6258A05F3008E9EB3 /* BlueToothInfoCell.xib in Resources */,
+				B581C13C25E88D3300B4EDF3 /* backImage@2x.png in Resources */,
 				DE60449A219E5A6300C952BA /* LaunchScreen.storyboard in Resources */,
+				B581C13B25E88D3300B4EDF3 /* backImage@3x.png in Resources */,
 				DE604497219E5A6300C952BA /* Assets.xcassets in Resources */,
 				58605D7A25331E0700165772 /* MBProgressHUD.bundle in Resources */,
 				78BA98B42366C54000F68726 /* AppleSignInVC.xib in Resources */,
@@ -1390,52 +1298,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7821B049251A07570045C48B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7821B057251A07570045C48B /* ViewController.m in Sources */,
-				7821B051251A07570045C48B /* AppDelegate.m in Sources */,
-				7821B062251A075A0045C48B /* main.m in Sources */,
-				7821B054251A07570045C48B /* SceneDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B064251A075A0045C48B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7821B06D251A075A0045C48B /* HJQuickReviewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7821B06F251A075A0045C48B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7821B078251A075A0045C48B /* HJQuickReviewUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DE604486219E5A6200C952BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE60455B219E5F1F00C952BA /* UIScrollView+Touch.m in Sources */,
 				58605D7925331E0700165772 /* MBProgressHUD+JJ.m in Sources */,
+				78852CCB258AE944008E9EB3 /* CenterBLEVC.m in Sources */,
 				DE604570219E5F1F00C952BA /* UIFont+FontSize.m in Sources */,
 				DE604576219E5F1F00C952BA /* UIFont+BFKit.m in Sources */,
 				DE604573219E5F1F00C952BA /* UITextView+ZWPlaceHolder.m in Sources */,
 				DE604593219E5F4600C952BA /* NSDate+Extend.m in Sources */,
 				DE60462A219E6D4300C952BA /* SecondVC.m in Sources */,
+				785DCC8E259480D800A51E2A /* THAssetsLibrary.m in Sources */,
 				78BBDAA7230E940B00D4BC3B /* HJGeneralRequest.m in Sources */,
 				DE60456D219E5F1F00C952BA /* UITextView+Extend.m in Sources */,
 				DE604560219E5F1F00C952BA /* UINavigationController+Extend.m in Sources */,
 				DE604565219E5F1F00C952BA /* UIDevice+HHKit.m in Sources */,
 				78BBDAA8230E940B00D4BC3B /* HJNetworkManager.m in Sources */,
 				DE604563219E5F1F00C952BA /* UIView+kSimpleUI.m in Sources */,
+				78852CAB258A0285008E9EB3 /* BleDeviceListVC.m in Sources */,
 				DE6045AD219E600600C952BA /* TouchIDHelper.m in Sources */,
 				DE604592219E5F4600C952BA /* NSString+Extend.m in Sources */,
+				78852CB5258A05F3008E9EB3 /* BlueToothInfoCell.m in Sources */,
 				78B4D6AA225CBDB000ECB59E /* NSObject+msgForwarding.m in Sources */,
 				DE604492219E5A6200C952BA /* ViewController.m in Sources */,
 				DE60455A219E5F1F00C952BA /* UINavigationBar+Extend.m in Sources */,
@@ -1471,10 +1356,13 @@
 				DE60455C219E5F1F00C952BA /* UILabel+Extend.m in Sources */,
 				DE604564219E5F1F00C952BA /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				787242E62463B3CB00AAE5E5 /* UITabBar+hj_badge.m in Sources */,
+				B581C12425E88AEA00B4EDF3 /* UIViewController+HJNavigation.m in Sources */,
 				DE6045C3219E6A1700C952BA /* HJCustomTabBarC.m in Sources */,
 				58A7786D2222E2A0005DC7D3 /* HJBaseUser.m in Sources */,
 				DE60459B219E5F4600C952BA /* NSNumber+yyExtend.m in Sources */,
 				DE604572219E5F1F00C952BA /* UITextField+KKTextLimit.m in Sources */,
+				B581C14225E89B6000B4EDF3 /* JTWrapNavigationController.m in Sources */,
+				785DCC852594799F00A51E2A /* NSTimer+Extend.m in Sources */,
 				78BA98A723667FD300F68726 /* HJTableCell.m in Sources */,
 				DE60456A219E5F1F00C952BA /* UIView+HJExtension.m in Sources */,
 				DE60456C219E5F1F00C952BA /* UIControl+Extend.m in Sources */,
@@ -1486,12 +1374,14 @@
 				DE604623219E6D4300C952BA /* OtherVC.m in Sources */,
 				DE60450C219E5B6300C952BA /* BasicModel.m in Sources */,
 				DEC6FA4621B5089B00FEB9AA /* HJGradientProcessView.m in Sources */,
+				785DCC97259484BB00A51E2A /* THCaptureButton.m in Sources */,
 				DE60463A219E6E9B00C952BA /* JDStatusBarView.m in Sources */,
 				DEC6FA5021B6324C00FEB9AA /* UITableViewCell+Extension.m in Sources */,
 				DE60464C219E74C400C952BA /* LTLaunchAdVC.m in Sources */,
 				DE604568219E5F1F00C952BA /* UIButton+Extend.m in Sources */,
 				DE60456E219E5F1F00C952BA /* UITableView+Extend.m in Sources */,
 				DE604621219E6D4300C952BA /* HomeVC.m in Sources */,
+				B581C12D25E88B1800B4EDF3 /* JTNavigationController.m in Sources */,
 				DE604508219E5B6300C952BA /* HJNetworkTool.m in Sources */,
 				DE604594219E5F4600C952BA /* NSString+Size.m in Sources */,
 				DE60464F219E74C400C952BA /* CacheDataManager.m in Sources */,
@@ -1506,9 +1396,11 @@
 				DE604574219E5F1F00C952BA /* UIColor+Extend.m in Sources */,
 				DE604559219E5F1F00C952BA /* UIImage+Image.m in Sources */,
 				58605CCA25328FAE00165772 /* CustomViewModel.m in Sources */,
+				785DCC7C259473F600A51E2A /* NSFileManager+Extend.m in Sources */,
 				DE604577219E5F1F00C952BA /* UIButton+selected.m in Sources */,
 				58605CD925329B3400165772 /* CustomModel.m in Sources */,
 				78BBDAA2230E8F9900D4BC3B /* HJWebViewController.m in Sources */,
+				B581C14B25E8FA1900B4EDF3 /* JTWrapViewController.m in Sources */,
 				DE6045C0219E62A700C952BA /* HJAOPManager.m in Sources */,
 				DE604639219E6E9B00C952BA /* JDStatusBarNotification.m in Sources */,
 				78BBDA9A230E8C0100D4BC3B /* HJNavigationController.m in Sources */,
@@ -1541,21 +1433,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7821B06A251A075A0045C48B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7821B04C251A07570045C48B /* HJQuickReview */;
-			targetProxy = 7821B069251A075A0045C48B /* PBXContainerItemProxy */;
-		};
-		7821B075251A075A0045C48B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7821B04C251A07570045C48B /* HJQuickReview */;
-			targetProxy = 7821B074251A075A0045C48B /* PBXContainerItemProxy */;
-		};
-		7821B07B251A075A0045C48B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7821B04C251A07570045C48B /* HJQuickReview */;
-			targetProxy = 7821B07A251A075A0045C48B /* PBXContainerItemProxy */;
-		};
 		DE6044A4219E5A6300C952BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE604489219E5A6200C952BA /* HJTemplate */;
@@ -1569,22 +1446,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7821B058251A07570045C48B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7821B059251A07570045C48B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7821B05D251A075A0045C48B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7821B05E251A075A0045C48B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		DE604493219E5A6200C952BA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1604,130 +1465,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7821B07E251A075A0045C48B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_ENTITLEMENTS = HJQuickReview/HJQuickReview.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.Clip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7821B07F251A075A0045C48B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_ENTITLEMENTS = HJQuickReview/HJQuickReview.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.Clip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7821B080251A075A0045C48B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReviewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.HJQuickReviewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJQuickReview.app/HJQuickReview";
-			};
-			name = Debug;
-		};
-		7821B081251A075A0045C48B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReviewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.HJQuickReviewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJQuickReview.app/HJQuickReview";
-			};
-			name = Release;
-		};
-		7821B082251A075A0045C48B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReviewUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.HJQuickReviewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HJQuickReview;
-			};
-			name = Debug;
-		};
-		7821B083251A075A0045C48B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT282N9QDY;
-				INFOPLIST_FILE = HJQuickReviewUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.HJTemplate.HJQuickReviewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HJQuickReview;
-			};
-			name = Release;
-		};
 		DE6044B4219E5A6300C952BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1852,6 +1589,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HJTemplate/ThirdParty/Realm",
 					"$(PROJECT_DIR)/HJTemplate/ThirdParty",
+					"$(PROJECT_DIR)/HJTemplate/ThirdParty/UMVisualSDK/UMVisual",
 				);
 				INFOPLIST_FILE = HJTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1876,6 +1614,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HJTemplate/ThirdParty/Realm",
 					"$(PROJECT_DIR)/HJTemplate/ThirdParty",
+					"$(PROJECT_DIR)/HJTemplate/ThirdParty/UMVisualSDK/UMVisual",
 				);
 				INFOPLIST_FILE = HJTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1965,33 +1704,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7821B084251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReview" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7821B07E251A075A0045C48B /* Debug */,
-				7821B07F251A075A0045C48B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7821B085251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReviewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7821B080251A075A0045C48B /* Debug */,
-				7821B081251A075A0045C48B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7821B086251A075A0045C48B /* Build configuration list for PBXNativeTarget "HJQuickReviewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7821B082251A075A0045C48B /* Debug */,
-				7821B083251A075A0045C48B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DE604485219E5A6200C952BA /* Build configuration list for PBXProject "HJTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

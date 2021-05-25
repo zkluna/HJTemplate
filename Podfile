@@ -13,7 +13,11 @@ target 'HJTemplate' do
   pod 'MJRefresh'
   pod 'CTMediator'
 # pod 'KSCrash'
-  pod 'fishhook'
+#  pod 'fishhook'
+  pod 'KMNavigationBarTransition'
+  pod 'WebViewJavascriptBridge'
+#  pod 'Texture'
+  
 
   target 'HJTemplateTests' do
     inherit! :search_paths

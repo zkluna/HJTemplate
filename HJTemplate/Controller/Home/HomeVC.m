@@ -12,13 +12,10 @@
 #import "CustomVC.h"
 #import "HJTableCell.h"
 #import "BleDeviceListVC.h"
-
 #import "AppleSignInVC.h"
-#import <pthread.h>
 
 @interface HomeVC () <UITableViewDelegate, UITableViewDataSource>
 
-@property (assign, nonatomic) BOOL isShow;
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *dataSource;
 
@@ -30,8 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
-    self.dataSource = @[@"Sign In with Apple",@"主动显示|隐藏TabBar",@"test vc", @"蓝牙"];
-    self.isShow = YES;
+    self.dataSource = @[@"Sign In with Apple",@"xxx",@"Test VC", @"蓝牙"];
     [self customSet];
     [self setUpTableView];
 }
@@ -51,6 +47,7 @@
 - (void)rightAction {
     OtherVC *otherVC = [[OtherVC alloc] init];
     otherVC.title = @"other";
+    otherVC.index = 0;
     [self.navigationController pushViewController:otherVC animated:YES];
 }
 #pragma mark -
@@ -73,14 +70,7 @@
         AppleSignInVC *vc = [[AppleSignInVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if(indexPath.row == 1) {
-        if(self.isShow) {
-            self.tabBarController.tabBar.hidden = YES;
-            [self.tableView setFrame:CGRectMake(0, 0, _kScreenWidth, _kScreenHeight)];
-        } else {
-            self.tabBarController.tabBar.hidden = NO;
-             [self.tableView setFrame:CGRectMake(0, 0, _kScreenWidth, _kScreenHeight-kTabBarHeight-SafeAreaBottomHeight)];
-        }
-        self.isShow = !_isShow;
+      
     } else if(indexPath.row == 2) {
         CustomVC *vc = [[CustomVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

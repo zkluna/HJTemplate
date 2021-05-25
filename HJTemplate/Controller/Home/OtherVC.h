@@ -10,4 +10,6 @@
 
 @interface OtherVC : UIViewController
 
+@property (assign, nonatomic) NSInteger index;
+
 @end

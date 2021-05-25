@@ -30,8 +30,8 @@
 - (void)rotateViewIndefinitelyInDurationPerLoop:(NSTimeInterval)duration isClockWise:(BOOL)isClockWise;
 - (void)removeRotateAnimtion;
 
-- (void)duangShowAnimation:(void(^ _Nullable)())finishAction;
-- (void)duangHideAnimation:(void(^ _Nullable)())finishAction;
-- (void)shakeAnimation:(void(^ _Nullable)())finishAction;
+- (void)duangShowAnimation:(void(^ _Nullable)(void))finishAction;
+- (void)duangHideAnimation:(void(^ _Nullable)(void))finishAction;
+- (void)shakeAnimation:(void(^ _Nullable)(void))finishAction;
 
 @end

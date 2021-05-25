@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HJCustomTabBarC.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+
 //#import "UncaughtExceptionHandler.h"
 //#import "MatrixHandler.h"
 //#import <KSCrash/KSCrash.h>
@@ -31,6 +32,7 @@
 //    [UncaughtExceptionHandler startCaughtExceptionHandler];
 //    [[MatrixHandler sharedInstance] installMatrix];
 //    [self installCrashHandler];
+    
     [[UITabBar appearance] setTranslucent:NO];
     HJCustomTabBarC *tabBar = [[HJCustomTabBarC alloc] init];
     self.window.rootViewController = tabBar;

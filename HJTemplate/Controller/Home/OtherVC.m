@@ -8,19 +8,19 @@
 
 #import "OtherVC.h"
 #import "HJCommonLib.h"
-#import "DZNEmptyDataSet.h"
 #import "UIImage+BFKit.h"
 #import "UIColor+Extend.h"
 #import "UIImage+Extend.h"
 #import "MBProgressHUD+JJ.h"
-
-#import <dlfcn.h>
-#import <fishhook/fishhook.h>
+#import "HJThread.h"
 
 @interface OtherVC ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSMutableArray *dataSource;
+@property (strong, nonatomic) HJThread *myThread;
+@property (assign, nonatomic) NSInteger num;
+@property (assign, nonatomic) BOOL stoped;
 
 @end
 
@@ -29,37 +29,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.num = 0;
+    self.stoped = NO;
+    self.title = [NSString stringWithFormat:@"%ld", self.index];
     [self subViewSetup];
-//    [self testRebindLog];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor hj_randomColor]] forBarMetrics:UIBarMetricsDefault];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"hhh" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonAction)];
+    
+    self.myThread = [[HJThread alloc] initWithTarget:self selector:@selector(testThreadAction) object:nil];
+    self.myThread.name = @"com.hjkl.thread";
+    [self.myThread start];
 }
-//- (void)testRebindLog {
-//    // 这里必须要先加载一次NSLog，如果不写NSLog，符号表里面根本就不会出现NSLog的地址
-//    NSString *temp = @"hjkl";
-//    NSLog(@"123");
-//    NSLog(@"%@", temp);
-//    // 定义rebinding结构体
-//    struct rebinding nslogBind;
-//    nslogBind.name = "NSLog";
-//    nslogBind.replacement = myLog;
-//    nslogBind.replaced = (void *)&old_nslog;
-//
-//    struct rebinding rebs[] = {nslogBind};
-//    rebind_symbols(rebs, 1);
-//    
-//}
-//static void (*old_nslog)(NSString *format, ...);
-//void myLog(NSString *format, ...) {
-////    va_list va = {0};
-////    mode_t mode = 0;
-////    va_start(va, format);
-////    mode = va_arg(va, int);
-//    printf("done my nslog ... \n");
-//    format = [format stringByAppendingString:@"\n 勾上了！！"];
-////    old_nslog(format, mode);
-//    old_nslog(format);
-////    va_end(va);
-//}
-
+- (void)testThreadAction {
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"done sub thread method ...");
+    CFRunLoopSourceContext context = {0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+    CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &context);
+    CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    
+    CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
+//    while (!self.stoped) {
+//        NSLog(@"%@", [NSThread currentThread]);
+//        CFRunLoopRun();
+//    }
+    CFRunLoopRemoveSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    CFRelease(source);
+    NSLog(@"done end ...");
+}
+- (void)doSomethingAction {
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"done something in sub thread ...");
+}
+- (void)rightBarButtonAction {
+    self.num += 1;
+    if (self.num >= 3) {
+        NSLog(@"done stop ...");
+        self.stoped = YES;
+        CFRunLoopStop(CFRunLoopGetCurrent());
+    } else {
+        NSLog(@"done some ...");
+        [self performSelector:@selector(doSomethingAction) onThread:self.myThread withObject:nil waitUntilDone:NO];
+    }
+}
 - (void)subViewSetup {
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.backgroundColor = [UIColor whiteColor];
@@ -84,8 +96,9 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSLog(@"your click the cell.");
+    OtherVC *vc = [[OtherVC alloc] init];
+    vc.index = self.index + 1;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
